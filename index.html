@@ -1,68 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/output.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesla</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons" defer></script>
+  <script defer>document.addEventListener('DOMContentLoaded', function(){ feather.replace(); });</script>
+  <script src="tailwind.config.js"></script>
 </head>
-<body class="bg-slate-950 text-white">
-    <nav class="sticky top-0 z-20 bg-slate-950/95 border-b border-white/10 backdrop-blur">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
-            <a href="#" class="text-lg font-semibold uppercase tracking-[0.35em] text-white">Tesla</a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#" class="transition hover:text-white">Vehicles</a>
-                <a href="#" class="transition hover:text-white">Energy</a>
-                <a href="#" class="transition hover:text-white">Charging</a>
-                <a href="#" class="transition hover:text-white">Discover</a>
-                <a href="#" class="transition hover:text-white">Shop</a>
-            </div>
-            <div class="flex items-center gap-3">
-                <a href="#" class="text-sm font-medium text-slate-300 transition hover:text-white">Account</a>
-                <button class="rounded-full bg-cyan-500 px-5 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400">Request Demo</button>
-            </div>
-        </div>
-    </nav>
-    <main class="relative overflow-hidden">
-        <div class="absolute inset-x-0 top-0 h-72 bg-[radial-gradient(circle_at_top,_rgba(14,165,233,0.35),_transparent_45%)]"></div>
-        <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:py-28">
-            <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_420px] lg:items-center">
-                <div>
-                    <p class="inline-flex rounded-full border border-cyan-500/40 bg-cyan-500/10 px-4 py-1 text-sm font-medium text-cyan-300">Electric future, today</p>
-                    <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Experience world-class electric performance.</h1>
-                    <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">Design, power, and sustainability in one beautiful package. Explore our vehicles, energy solutions, and charging network.</p>
-                    <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-                        <a href="#" class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-slate-950/10 transition hover:-translate-y-0.5 hover:bg-slate-100">Start Your Journey</a>
-                        <a href="#" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-3 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300">View Models</a>
-                    </div>
+
+<body class="bg-white text-tesla-dark font-sans overflow-x-hidden">
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 h-14 bg-white/90 backdrop-blur-sm">
+
+    <!-- Logo -->
+    <a href="#" class="flex-shrink-0">
+        <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="100" />
+    </a>
+
+    <!-- Center links -->
+    <div class="flex items-center gap-7">
+      <a href="#" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Vehicles</a>
+      <a href="#" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Energy</a>
+      <a href="#" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Charging</a>
+      <a href="#" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Discover</a>
+      <a href="shop.html" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Shop</a>
+    </div>
+
+    <!-- Right -->
+      <div class="flex items-center gap-4 text-xl text-black">
+                 <button aria-label="Feather icon">
+                     <i data-feather="help-circle" class="w-5 h-5"></i>
+                 </button>
+                <button aria-label="Feather icon">
+                     <i data-feather="globe" class="w-5 h-5"></i>
+                 </button>
+                 <button aria-label="Feather icon">
+                      <i data-feather="user" class="w-5 h-5"></i>
+                </button>
                 </div>
-                <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-slate-950/20 backdrop-blur-xl">
-                    <div class="space-y-5">
-                        <div class="flex items-center justify-between text-sm text-slate-300">
-                            <span>Model S</span>
-                            <span class="text-cyan-300 font-semibold">Available</span>
-                        </div>
-                        <div class="rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950 p-6 text-white">
-                            <h2 class="text-2xl font-bold">Luxury meets speed</h2>
-                            <p class="mt-3 text-sm leading-6 text-slate-300">A sleek electric sedan built for dynamic driving and premium comfort.</p>
-                        </div>
-                        <div class="grid gap-4 sm:grid-cols-2">
-                            <div class="rounded-3xl border border-white/10 bg-slate-900/80 p-4 text-sm text-slate-300">
-                                <p class="font-semibold text-white">Range</p>
-                                <p class="mt-2 text-2xl">396 mi</p>
-                            </div>
-                            <div class="rounded-3xl border border-white/10 bg-slate-900/80 p-4 text-sm text-slate-300">
-                                <p class="font-semibold text-white">0-60 mph</p>
-                                <p class="mt-2 text-2xl">1.99 $</p>
-                                <p class="mt-3 text-2xl">2.38 $</p>
-                                <p class="mt-3 text-2xl">4.90 $</p>
-                            </div>
-                        </div>
-                        <button class="w-full rounded-full bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400">Reserve Now</button>
-                    </div>
-                </div>
-            </div>
+  </nav>
+
+  <!-- ========== HERO: MODEL Y ========== -->
+  <section
+    class="relative flex flex-col items-center justify-between min-h-hero h-screen pt-[140px] pb-16 bg-cover bg-center bg-[#d8d8d8]"
+    style="background-image: url('img/Homepage-Promo-Meet-Model-Y-Desktop.avif');"
+  >
+    <!-- Top text -->
+    <div class="text-center">
+      <h1 class="text-[40px] font-semibold tracking-wide text-tesla-dark">Model Y</h1>
+      <p class="text-sm mt-1 text-tesla-gray">0% APR Available</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex flex-col items-center gap-3 w-full px-4">
+      <div class="flex gap-3 flex-wrap justify-center">
+        <button class="min-w-[200px]  bg-blue-500/65 hover:bg-blue-500/85 text-white text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-8 transition-colors">
+          Order Now
+        </button>
+        <button class="min-w-[200px] bg-white/65 hover:bg-white/85 backdrop-blur-xs text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-8 transition-colors">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <!-- Scroll arrow -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce-slow text-tesla-gray">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== FSD / AUTOPILOT SECTION ========== -->
+  <section
+    class="relative flex flex-col items-center justify-between min-h-hero h-screen pt-[120px] pb-16 bg-cover bg-center bg-[#e8e8e8]"
+    style="background-image: url('YOUR_AUTOPILOT_IMAGE.jpg');"
+  >
+    <!-- Info bar -->
+    <div class="w-full bg-white/90 backdrop-blur-sm border-b border-gray-200 py-2 px-6 flex items-center gap-6 justify-center text-[13px] text-tesla-gray">
+      <span>💬 Ask a Question — "Compare Model 3 and Model Y"</span>
+      <span class="hidden md:block">|</span>
+      <span class="hidden md:block">🔵 Schedule a Drive Today</span>
+    </div>
+
+    <!-- Title -->
+    <div class="text-center px-4">
+      <p class="text-[11px] font-bold tracking-[0.2em] uppercase text-tesla-light mb-1">Full Self-Driving</p>
+      <h2 class="text-[34px] font-semibold text-tesla-dark">(Supervised)</h2>
+      <p class="text-sm mt-2 text-tesla-gray">Makes every drive easier. Subscribe for $99/mo.<sup>1</sup></p>
+    </div>
+
+    <!-- Stats -->
+    <div class="flex gap-16 flex-wrap justify-center px-4">
+      <div class="text-center">
+        <p class="text-3xl font-semibold text-tesla-dark">7x</p>
+        <p class="text-xs text-tesla-light mt-1">Fewer Collisions</p>
+      </div>
+      <div class="text-center">
+        <p class="text-3xl font-semibold text-tesla-dark">10,555,048,026</p>
+        <p class="text-xs text-tesla-light mt-1">Miles Driven</p>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-3 flex-wrap justify-center px-4">
+      <button class="min-w-[180px]  bg-blue-500/65 hover:bg-blue-500/85 text-white text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-8 transition-colors">
+        Schedule Demo
+      </button>
+      <button class="min-w-[180px] bg-white/65 hover:bg-white/85 backdrop-blur-xs text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-8 transition-colors">
+        Learn More
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCT GRID: MODEL 3 + MODEL Y ========== -->
+  <section class="grid grid-cols-1 md:grid-cols-2">
+
+    <!-- Model 3 -->
+    <div
+      class="relative flex flex-col justify-end min-h-[80vh] pb-20 pl-14 bg-cover bg-center bg-[#c8c8c8] rounded-2xl"
+      style="background-image: url('img/tesla\ model3.avif');"
+    >
+      <p class="text-[11px] font-semibold tracking-[0.2em] uppercase text-white/80 mb-1">Sport Sedan</p>
+      <h2 class="text-[32px] font-semibold text-white">Model 3</h2>
+      <p class="text-sm text-white/90 mt-1 mb-5">Lease From $299/mo</p>
+      <div class="flex gap-3">
+      <a href="https://www.tesla.com/model3/design#overview" class="bg-blue-500/65 hover:bg-blue-500/85 text-white text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Order Now
+        </a>
+        <button class="bg-white/65 hover:bg-white/85 backdrop-blur-xs text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <!-- Model Y -->
+    <div
+      class="relative flex flex-col justify-end min-h-[80vh] pb-20 pl-14 bg-cover bg-center bg-[#b8c5c8] rounded-2xl"
+      style="background-image: url('img/Homepage-Promo-Meet-Model-Y-Desktop.avif');"
+    >
+      <p class="text-[11px] font-semibold tracking-[0.2em] uppercase text-white/80 mb-1">Midsize SUV</p>
+      <h2 class="text-[32px] font-semibold text-white">Model Y</h2>
+      <p class="text-sm text-white/90 mt-1 mb-5">Lease From $459/mo</p>
+      <div class="flex gap-3">
+        <button class=" bg-blue-500/65 hover:bg-blue-500/85 text-white text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Order Now
+        </button>
+        <button class="bg-white/65 hover:bg-white/85 backdrop-blur-xs text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dots -->
+  <div class="flex justify-center gap-2 py-4 bg-white">
+    <div class="w-2 h-2 rounded-full bg-tesla-dark"></div>
+    <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+    <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+  </div>
+
+  <!-- ========== CURRENT OFFERS + INVENTORY ========== -->
+  <section class="grid grid-cols-1 md:grid-cols-2 border-t border-gray-100">
+
+    <!-- Current Offers -->
+    <div class="flex items-center justify-between gap-6 p-10 bg-white border-b md:border-b-0 md:border-r border-gray-100">
+      <div>
+        <h3 class="text-xl font-semibold mb-1">Current Offers</h3>
+        <p class="text-sm text-tesla-light mb-5">Explore limited-time offers on Tesla vehicles.</p>
+        <button class="bg-white border border-gray-300 hover:bg-gray-50 text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Learn More
+        </button>
+      </div>
+      <div class="w-36 h-20 bg-gray-200 rounded overflow-hidden flex-shrink-0">
+        <img src="img/Homepage-Grid-Current-Offers-All-Devices.avif" alt="Offers" class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+    <!-- Inventory -->
+    <div class="flex items-center justify-between gap-6 p-10 bg-white">
+      <div>
+        <h3 class="text-xl font-semibold mb-1">Inventory</h3>
+        <p class="text-sm text-tesla-light mb-5">Find nearby vehicles available for immediate delivery.</p>
+        <div class="flex gap-2">
+          <button class="bg-tesla-dark/80 hover:bg-tesla-dark text-white text-[13px] font-semibold tracking-widest uppercase rounded py-2 px-5 transition-colors">
+            New
+          </button>
+          <button class="bg-white border border-gray-300 hover:bg-gray-50 text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-2 px-5 transition-colors">
+            Pre-Owned
+          </button>
         </div>
-    </main>
+      </div>
+      <div class="w-36 h-20 bg-gray-200 rounded overflow-hidden flex-shrink-0">
+        <img src="img/Homepage-Grid-Inventory-All-Devices.avif" alt="Inventory" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SUPERCHARGER MAP ========== -->
+  <section>
+    <!-- Map -->
+    <div class="relative w-full h-[420px] overflow-hidden rounded-3xl bg-[#e0e0e0] shadow-sm">
+      <iframe
+        class="absolute inset-0 w-full h-full"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52910353.44870648!2d-161.6526508955753!3d35.96184819554919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sAmerika%20Serikat!5e0!3m2!1sid!2sid!4v1779708548315!5m2!1sid!2sid"
+        width="600" height="450" style="border:0;"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Tesla Supercharger map"
+      ></iframe>
+      <div class="absolute inset-0 bg-black/10"></div>
+      <button class="absolute bottom-4 left-4 flex items-center gap-2 bg-white shadow rounded px-4 py-2 text-sm font-medium hover:bg-gray-50 transition-colors">
+        <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+        </svg>
+        Find Me
+      </button>
+    </div>
+
+    <!-- Stats + CTA -->
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 px-12 py-12 bg-white border-t border-gray-100">
+      <div>
+        <h2 class="text-[32px] font-semibold mb-2">Find Your Charge</h2>
+        <p class="text-sm text-tesla-light max-w-sm mb-6">
+          View the network of Tesla Superchargers and Destination Chargers available near you.
+        </p>
+        <div class="flex gap-3">
+          <button class="bg-tesla-dark hover:bg-black text-white text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+            View Network
+          </button>
+          <button class="bg-white border border-gray-300 hover:bg-gray-50 text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="flex gap-14">
+        <!-- Superchargers -->
+        <div class="flex items-center gap-3">
+          <span class="text-red-500 text-4xl leading-none">⚡</span>
+          <div>
+            <p class="text-2xl font-semibold">37,286</p>
+            <p class="text-xs text-tesla-light mt-0.5">Superchargers</p>
+          </div>
+        </div>
+        <!-- Destination Chargers -->
+        <div class="flex items-center gap-3">
+          <span class="text-gray-400 text-4xl leading-none">⚡</span>
+          <div>
+            <p class="text-2xl font-semibold">6,526</p>
+            <p class="text-xs text-tesla-light mt-0.5">Destination Chargers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOLAR + POWERWALL ========== -->
+  <section class="grid grid-cols-1 md:grid-cols-2">
+
+    <!-- Solar Panels -->
+    <div
+      class="relative flex flex-col justify-end min-h-[80vh] pb-20 pl-14 bg-cover bg-center bg-[#2a2a2a]"
+      style="background-image: url('img/Homepage-Card-Solar-Panels-Desktop-v2.avif');"
+    >
+      <h2 class="text-[32px] font-semibold text-white">Solar Panels</h2>
+      <p class="text-sm text-white/80 mt-1 mb-5">Power Your Home and Reduce Your Electricity Bill</p>
+      <div class="flex gap-3">
+        <button class=" bg-blue-500/65 hover:bg-blue-500/85 text-white text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Order Now
+        </button>
+        <button class="bg-white/65 hover:bg-white/85 backdrop-blur-xs text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <!-- Powerwall -->
+    <div
+      class="relative flex flex-col justify-end min-h-[80vh] pb-20 pl-14 bg-cover bg-center bg-[#1a1a1a]"
+      style="background-image: url('img/Homepage-Card-Powerwall.avif');"
+    >
+      <h2 class="text-[32px] font-semibold text-white">Powerwall</h2>
+      <p class="text-sm text-white/80 mt-1 mb-5">Keep Your Lights On During Outages</p>
+      <div class="flex gap-3">
+        <button class="bg-blue-500/65 hover:bg-blue-500/85 text-white text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Order Now
+        </button>
+        <button class="bg-white/65 hover:bg-white/85 backdrop-blur-xs text-tesla-dark text-[13px] font-semibold tracking-widest uppercase rounded py-3 px-7 transition-colors">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dots -->
+  <div class="flex justify-center gap-2 py-4 bg-white">
+    <div class="w-2 h-2 rounded-full bg-tesla-dark"></div>
+    <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+    <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+  </div>
+
+  <!-- ========== FINE PRINT ========== -->
+  <section class="bg-white px-12 py-6 border-t border-gray-100 space-y-2">
+    <p class="text-[11px] text-tesla-light leading-relaxed">
+      <sup>1</sup> Terms and conditions apply. Promotion requires delivery of a Model 3 Premium or Performance vehicle and is subject to change or end at any time. You are still responsible for Supercharging-related fees, like congestion fees, when applicable.
+    </p>
+    <p class="text-[11px] text-tesla-light leading-relaxed">
+      <sup>2</sup> Price reflects monthly subscription, subject to terms and conditions. Price and feature availability subject to change.
+    </p>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-white border-t border-gray-200 px-12 py-8">
+    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+      <span class="text-[12px] text-tesla-light">Tesla © 2026</span>
+      <a href="#" class="text-[12px] text-tesla-light hover:underline">Privacy &amp; Legal</a>
+      <a href="#" class="text-[12px] text-tesla-light hover:underline">Vehicle Recalls</a>
+      <a href="#" class="text-[12px] text-tesla-light hover:underline">Contact</a>
+      <a href="#" class="text-[12px] text-tesla-light hover:underline">News</a>
+      <a href="#" class="text-[12px] text-tesla-light hover:underline">Get Updates</a>
+      <a href="#" class="text-[12px] text-tesla-light hover:underline">Locations</a>
+      <a href="#" class="text-[12px] text-tesla-light hover:underline">Learn</a>
+    </div>
+  </footer>
+
 </body>
 </html>

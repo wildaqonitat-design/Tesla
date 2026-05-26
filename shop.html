@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tesla Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/output.css" />
+  <script src="tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@400;500;700&display=swap" rel="stylesheet"/>
+  
+</head>
+<body class="bg-white text-[#171a20] font-['Helvetica Neue',Helvetica,Arial,sans-serif]">
+
+  <!-- ── NAVBAR ── -->
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-[20px] bg-white/80 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0">
+        <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="100" />
+    </a>
+      <!-- Nav Links -->
+      <div class="hidden md:flex items-center gap-8 text-xs font-medium text-[#171a20]">
+        <a href="#" class="hover:text-gray-500 transition-colors">Shop</a>
+        <a href="#" class="hover:text-gray-500 transition-colors">Vehicle Accessories</a>
+        <a href="#" class="hover:text-gray-500 transition-colors">Apparel</a>
+        <a href="#" class="hover:text-gray-500 transition-colors">Lifestyle</a>
+        <a href="#" class="hover:text-gray-500 transition-colors">Charging</a>
+        <a href="#" class="hover:text-gray-500 transition-colors">Upgrades / Installations</a>
+      </div>
+      <!-- Icons -->
+      <div class="flex items-center gap-4">
+        <button class="p-1 hover:opacity-60 transition-opacity">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="p-1 hover:opacity-60 transition-opacity">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="p-1 hover:opacity-60 transition-opacity relative">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="absolute -top-1 -right-1 bg-[#171a20] text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO BANNER ── -->
+  <section class="relative w-full mt-12" style="height: 600px;">
+    <!-- Replace src with your hero image -->
+     <video src="img2/shop/MY_Roof_Rack_Desktop_2x.webm" autoplay
+     class="w-full h-full object-cover"></video>
+    <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.35)_0%,transparent_60%)] absolute inset-0 flex flex-col items-center justify-end pb-16">
+      <h1 class="text-white text-3xl font-semibold tracking-wide mb-5">Model Y Roof Rack</h1>
+      <a href="https://shop.tesla.com/product/model-y-roof-rack" class="tracking-[0.08em] transition-colors duration-200 ease-[ease] bg-white/20 border border-white text-white text-xs font-semibold uppercase px-8 py-2.5 rounded-sm hover:bg-white hover:text-[#171a20]">
+        Shop Now
+      </a>
+    </div>
+  </section>
+
+  <!-- ── BEST SELLERS ── -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-xl font-semibold mb-7">Best Sellers</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+
+      <!-- Card Template — repeat & swap image/title -->
+      <div class="transition-all duration-[250ms] ease-[ease] cursor-pointer group">
+        <div class="bg-[#f5f5f5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
+          <img src="img2/shop/1457768-01-F_0.avif" alt="Cybertruck Tool Kit" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"/>
+        </div>
+        <p class="mt-3 text-sm font-medium">Wall Connector</p>
+      </div>
+
+      <div class="transition-all duration-[250ms] ease-[ease] cursor-pointer group">
+        <div class="bg-[#f5f5f5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
+          <img src="img2/shop/FSDV14.0.avif" alt="Model S/Y 4-in-1 USB-C Hub" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"/>
+        </div>
+        <p class="mt-3 text-sm font-medium">One Month Full Self-Driving (Supervised) Gift Card</p>
+      </div>
+
+      <div class="transition-all duration-[250ms] ease-[ease] cursor-pointer group">
+        <div class="bg-[#f5f5f5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
+          <img src="img2/shop/2134478-00-B_01_2000.avif" alt="Model X Sunshades" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"/>
+        </div>
+        <p class="mt-3 text-sm font-medium">Cybertruck Terrestrial Armor Package</p>
+      </div>
+
+      <div class="transition-all duration-[250ms] ease-[ease] cursor-pointer group">
+        <div class="bg-[#f5f5f5] rounded-sm overflow-hidden aspect-square flex items-center justify-center p-6">
+          <img src="img2/shop/1616599-00-A_0.avif" alt="Model 3" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"/>
+        </div>
+        <p class="mt-3 text-sm font-medium">Model Y All-Weather Interior Liners</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── VEHICLE ACCESSORY SECTIONS (reusable pattern) ── -->
+
+  <!-- Model Y -->
+  <section class="relative w-full" style="height: 500px;">
+    <img src="img2/shop/DSCF8694-1_2800x1300.avif" alt="Model Y Accessories" class="w-full h-full object-cover"/>
+    <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.45)_0%,transparent_70%)] absolute inset-0 flex flex-col items-center justify-end pb-16">
+      <h2 class="text-white text-2xl font-semibold tracking-wide mb-5">Model Y Accessories</h2>
+      <a href="https://shop.tesla.com/category/vehicle-accessories/model-y" class="tracking-[0.08em] transition-colors duration-200 ease-[ease] bg-white/20 border border-white text-white text-xs font-semibold uppercase px-8 py-2.5 rounded-sm hover:bg-white hover:text-[#171a20]">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Model 3 -->
+  <section class="relative w-full" style="height: 500px;">
+    <img src="img2/shop/Model3Performance_Roof_Rack_2800x1300.avif" alt="Model 3 Accessories" class="w-full h-full object-cover"/>
+    <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.45)_0%,transparent_70%)] absolute inset-0 flex flex-col items-center justify-end pb-16">
+      <h2 class="text-white text-2xl font-semibold tracking-wide mb-5">Model 3 Accessories</h2>
+      <a href="#" class="tracking-[0.08em] transition-colors duration-200 ease-[ease] bg-white/20 border border-white text-white text-xs font-semibold uppercase px-8 py-2.5 rounded-sm hover:bg-white hover:text-[#171a20]">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Model S -->
+  <section class="relative w-full" style="height: 500px;">
+    <img src="img2/shop/MS_web.avif" alt="Model S Accessories" class="w-full h-full object-cover"/>
+    <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.45)_0%,transparent_70%)] absolute inset-0 flex flex-col items-center justify-end pb-16">
+      <h2 class="text-white text-2xl font-semibold tracking-wide mb-5">Model S Accessories</h2>
+      <a href="#" class="tracking-[0.08em] transition-colors duration-200 ease-[ease] bg-white/20 border border-white text-white text-xs font-semibold uppercase px-8 py-2.5 rounded-sm hover:bg-white hover:text-[#171a20]">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Model X -->
+  <section class="relative w-full" style="height: 500px;">
+    <img src="img2/shop/MX_web.avif" alt="Model X Accessories" class="w-full h-full object-cover"/>
+    <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.45)_0%,transparent_70%)] absolute inset-0 flex flex-col items-center justify-end pb-16">
+      <h2 class="text-white text-2xl font-semibold tracking-wide mb-5">Model X Accessories</h2>
+      <a href="#" class="tracking-[0.08em] transition-colors duration-200 ease-[ease] bg-white/20 border border-white text-white text-xs font-semibold uppercase px-8 py-2.5 rounded-sm hover:bg-white hover:text-[#171a20]">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Cybertruck -->
+  <section class="relative w-full" style="height: 500px;">
+    <img src="img2/shop/4Z65LglsywtlS42_web.avif" alt="Cybertruck Accessories" class="w-full h-full object-cover"/>
+    <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.45)_0%,transparent_70%)] absolute inset-0 flex flex-col items-center justify-end pb-16">
+      <h2 class="text-white text-2xl font-semibold tracking-wide mb-5">Cybertruck Accessories</h2>
+      <a href="#" class="tracking-[0.08em] transition-colors duration-200 ease-[ease] bg-white/20 border border-white text-white text-xs font-semibold uppercase px-8 py-2.5 rounded-sm hover:bg-white hover:text-[#171a20]">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Charging -->
+  <section class="relative w-full" style="height: 500px;">
+    <img src="img2/shop/fvW6NvXGLVYM7kco63br_desktop.avif" alt="Charging" class="w-full h-full object-cover"/>
+    <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.45)_0%,transparent_70%)] absolute inset-0 flex flex-col items-center justify-end pb-16">
+      <h2 class="text-white text-2xl font-semibold tracking-wide mb-5">Charging</h2>
+      <a href="#" class="tracking-[0.08em] transition-colors duration-200 ease-[ease] bg-white/20 border border-white text-white text-xs font-semibold uppercase px-8 py-2.5 rounded-sm hover:bg-white hover:text-[#171a20]">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ── APPAREL GRID ── -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Men's Apparel -->
+      <div class="transition-all duration-[250ms] ease-[ease] cursor-pointer group">
+        <div class="bg-[#0d0d0d] rounded-sm overflow-hidden aspect-square flex items-center justify-center">
+          <img src="img2/shop/mens_web_2800x1300.avif" alt="Men's Apparel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+          <p class="text-sm font-medium">Men's Apparel</p>
+          <a href="#" class="text-xs border border-[#171a20] px-4 py-1.5 rounded-sm hover:bg-[#171a20] hover:text-white transition-colors font-medium uppercase tracking-wide">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Women's Apparel -->
+      <div class="transition-all duration-[250ms] ease-[ease] cursor-pointer group">
+        <div class="bg-[#1c1c1c] rounded-sm overflow-hidden aspect-square flex items-center justify-center">
+          <img src="img2/shop/womens_web_2800x1300.avif" alt="Women's Apparel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+          <p class="text-sm font-medium">Women's Apparel</p>
+          <a href="#" class="text-xs border border-[#171a20] px-4 py-1.5 rounded-sm hover:bg-[#171a20] hover:text-white transition-colors font-medium uppercase tracking-wide">Shop Now</a>
+        </div>
+      </div>
+
+      <!-- Kids' Apparel -->
+      <div class="transition-all duration-[250ms] ease-[ease] cursor-pointer group">
+        <div class="bg-[#f0f0f0] rounded-sm overflow-hidden aspect-square flex items-center justify-center">
+          <img src="img2/shop/kids_web_2800x1300.avif" alt="Kids' Apparel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+        </div>
+        <div class="mt-4 flex items-center justify-between">
+          <p class="text-sm font-medium">Kids' Apparel</p>
+          <a href="#" class="text-xs border border-[#171a20] px-4 py-1.5 rounded-sm hover:bg-[#171a20] hover:text-white transition-colors font-medium uppercase tracking-wide">Shop Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── LIFESTYLE BANNER ── -->
+  <section class="relative w-full" style="height: 400px;">
+    <img src="img2/shop/WirelessCharger2800x1300.avif" alt="Lifestyle" class="w-full h-full object-cover"/>
+    <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.45)_0%,transparent_70%)] absolute inset-0 flex flex-col items-center justify-end pb-16">
+      <h2 class="text-white text-2xl font-semibold tracking-wide mb-5">Lifestyle</h2>
+      <a href="#" class="tracking-[0.08em] transition-colors duration-200 ease-[ease] bg-white/20 border border-white text-white text-xs font-semibold uppercase px-8 py-2.5 rounded-sm hover:bg-white hover:text-[#171a20]">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="border-t border-gray-200 mt-10">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+      <p>Tesla © 2026 | All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-gray-700 transition-colors">Privacy &amp; Legal</a>
+        <a href="#" class="hover:text-gray-700 transition-colors">Contact</a>
+        <a href="#" class="hover:text-gray-700 transition-colors">Careers</a>
+        <a href="#" class="hover:text-gray-700 transition-colors">News</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

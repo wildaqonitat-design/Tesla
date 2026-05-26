@@ -1,0 +1,71 @@
+:root {
+  color-scheme: dark;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+body {
+  line-height: 1.5;
+}
+
+main {
+  background: #000;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #7dd3fc;
+}
+
+.tds-btn {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.tds-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.92;
+}
+
+.tds-site-header {
+  backdrop-filter: blur(18px);
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.tds-site-logo-link svg {
+  height: 28px;
+}
+
+.tcl-section {
+  padding-block: 3rem;
+}
+
+.tcl-section:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tcl-section:nth-child(even) {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tcl-text-gradient--blue-center {
+  color: #7dd3fc !important;
+}
