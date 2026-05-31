@@ -13,6 +13,24 @@
 
 <body class="bg-white text-tesla-dark font-sans overflow-x-hidden">
 
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-[#f4f4f4] border-t border-gray-200 z-50 p-4 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4 text-xs text-[#393c41]">
+            <p class="leading-relaxed max-w-4xl">
+            
+Tesla © 2026
+Privacy & Legal
+Locations
+Loading
+Help Us Improve Our Website with Cookies
+We use cookies and process data from your device to analyze website performance, personalize ad content, and improve your experience. Your consent includes data transfers outside of the country you’re located. View <a href="#" class="underline"> Cookie Settings</a> for more information.
+            </p>
+            <div class="flex gap-3 shrink-0">
+                <button onclick="dismissCookie()" class="bg-[#393c41] text-white font-medium py-2 px-8 rounded transition hover:bg-[#171a20]">Accept</button>
+                <button onclick="dismissCookie()" class="bg-transparent text-[#393c41] font-medium py-2 px-8 rounded border border-[#393c41] transition hover:bg-gray-200">Reject</button>
+            </div>
+        </div>
+    </div>
+
   <!-- ========== NAVBAR ========== -->
   <nav class="fixed inset-x-0 top-0 z-50 h-[40px] bg-white/85 backdrop-blur-lg border-b border-white/70">
     <div class="mx-auto flex h-full max-w-[1280px] items-center justify-between px-6">
