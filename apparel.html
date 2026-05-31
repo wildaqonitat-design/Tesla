@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesla — Apparel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+  
+  </style>
+</head>
+<body class="bg-white text-[#171a20]">
+
+  <!-- ── NAVBAR ── -->
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-[20px] bg-white/80 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
+      <!-- Left: Logo + Shop -->
+      <div class="flex items-center gap-3">
+          <a href="index.html" class="flex-shrink-0">
+        <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="70" />
+    </a>
+        <span class="text-gray-300 text-sm">|</span>
+        <a href="shop.html" class="text-[13px] text-[#171a20] font-medium">Shop</a>
+      </div>
+      <!-- Center: Nav links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Charging</a>
+        <a href="#" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Vehicle Accessories</a>
+        <a href="apparel.html" class="text-[13px] text-[#171a20] font-semibold hover:text-gray-500 transition-colors">Apparel</a>
+        <a href="lifestyle.html" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Lifestyle</a>
+        <a href="specialcollections.html" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Special Collections</a>
+      </div>
+
+      <!-- Right icons -->
+      <div class="flex items-center gap-4">
+        <button class="hover:text-gray-500 transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/></svg>
+        </button>
+        <button class="hover:text-gray-500 transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM12 14c-4.42 0-8 1.79-8 4v1h16v-1c0-2.21-3.58-4-8-4z"/></svg>
+        </button>
+        <button class="hover:text-gray-500 transition-colors relative">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.3 5.4a1 1 0 0 0 1 1.2h11.6M7 13H5.4M10 21a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm7 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ MAIN CONTENT ═══════════════════════ -->
+  <main class="max-w-[1200px] mx-auto px-6 py-10">
+
+    <!-- Page Title -->
+    <h1 class="text-[28px] font-semibold tracking-tight text-[#171a20] mb-10">Men</h1>
+
+    <!-- ── BEST SELLERS ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Best Sellers</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <!-- Card 1 -->
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/special collections/2420009-00-A_1_2000.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla FC Jersey</p>
+          <p class="price mt-1">$95</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/special collections/2420014-00-A_01_2000.avif" alt="Espresso Set" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla FC Snapback Hat</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <!-- Card 3 — full-width banner style -->
+        <div class="product-card cursor-pointer group col-span-2 sm:col-span-1">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/special collections/2420409-00-A_1_2000.avif" alt="Full Self-Driving" class="product-img w-full h-full object-cover" />
+          </div>
+          <p class="product-name">Tesla FC Socks</p>
+          <p class="price mt-1">$30</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── TEES ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Tees</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/special collections/2420009-00-A_1_2000.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla FC Jersey</p>
+          <p class="price mt-1">$95</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/2.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla Optimus Coffee Break Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <span class="absolute top-3 left-3 badge-popular text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wider">Out Of Stock</span>
+            <img src="img2/apparel/3.avif" alt="Tesla Mini Backpack" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla Optimus Earth Day Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/4.avif" alt="Tesla Pouch Kit" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Optimus Code Tee</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/5.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla Optimus Electric Slide Tee</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/6.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Men's Tesla Optimus Essential Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/7.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla Optimus Botsplained Tee</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/8.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Men's Model S/X Plaid Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/9.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Men's Model Y Launch Series Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/10.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Men’s Model 3 Performance Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/11.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Men's Tesla Core Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/12.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Men’s Cybercab Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/13.avif" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Men's Cybertruck Inside Tesla Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Sweatshirts and Hoodies ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Sweatshirts and Hoodies</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/h1.avif" alt="Espresso Set" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Optimus Electric Slide Hoodie</p>
+          <p class="price mt-1">$85</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/h2.avif" alt="Tesla Core Hoodie" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Core Hoodie</p>
+          <p class="price mt-1">$85</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/h3.avif" alt="Model Y Launch Series Hoodie" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Model Y Launch Series Hoodie</p>
+          <p class="price mt-1">$75</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/h4.avif" alt="Model 3 Performance Hoodie" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Model 3 Performance Hoodie</p>
+          <p class="price mt-1">$75</p>
+        </div>
+
+         </div>
+    </section>
+
+         <!-- ── Outerwear ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Outerwear</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/a.avif" alt="On-the-Road Tumbler" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Men’s Core Jacket</p>
+          <p class="price mt-1">$120</p>
+        </div>
+
+         </div>
+    </section>
+
+         <!-- ── hat ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Hats</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+       <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/special collections/2420014-00-A_01_2000.avif" alt="Espresso Set" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla FC Snapback Hat</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c2.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cybercab Trucker Hat</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c3.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Model Y Launch Series Snapback Hat</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c4.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Model 3 Performance Snapback Hat</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c5.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Model S/X Plaid Snapback Hat</p>
+          <p class="price mt-1">$50</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c6.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cybertruck Off-Road Corduroy Hat</p>
+          <p class="price mt-1">$50</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c7.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cyberbeast Trucker Hat</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+             <span class="absolute top-3 left-3 badge-popular text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wider">Out Of Stock</span>
+            <img src="img2/apparel/c8.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cybertruck Icon Snapback Hat</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c9.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Built for Any Planet Trucker Hat</p>
+          <p class="price mt-1">$30</p>
+        </div>
+        
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c10.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Relaxed T Logo Hat</p>
+          <p class="price mt-1">$30</p>
+        </div>
+        
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c11.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Relaxed Wordmark Hat</p>
+          <p class="price mt-1">$30</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Socks ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Socks</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+         <div class="product-card cursor-pointer group col-span-2 sm:col-span-1">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/special collections/2420409-00-A_1_2000.avif" alt="Full Self-Driving" class="product-img w-full h-full object-cover" />
+          </div>
+          <p class="product-name">Tesla FC Socks</p>
+          <p class="price mt-1">$30</p>
+        </div>
+
+
+        </div>
+    </section>
+
+    <h1 class="text-[28px] font-semibold tracking-tight text-[#171a20] mb-10">Women</h1>
+
+    <!-- ── Best seller ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Best Seller</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/w.avif" alt="Tesla Gen 3 Wooden Playset" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Women's Core Jacket</p>
+          <p class="price mt-1">$110</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/c10.avif" alt="Cybertruck Wind-up Racer" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Relaxed T Logo Hat</p>
+          <p class="price mt-1">$30</p>
+        </div>
+
+        </div>
+    </section>
+
+     <!-- ── tees ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Tees</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/t1.avif" alt="Lightning Cybertruck Model" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Women's Tesla Core Tee</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/t2.avif" alt="Tesla Optimus Figure" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Women’s OMFG Tee</p>
+          <p class="price mt-1">$30</p>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- ── Sweatshirts and Hoodies ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Sweatshirts and Hoodies</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+       <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/h2.avif" alt="Tesla Core Hoodie" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Core Hoodie</p>
+          <p class="price mt-1">$85</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/h3.avif" alt="Model Y Launch Series Hoodie" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Model Y Launch Series Hoodie</p>
+          <p class="price mt-1">$75</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/h4.avif" alt="Model 3 Performance Hoodie" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Model 3 Performance Hoodie</p>
+          <p class="price mt-1">$75</p>
+        </div>
+
+         </div>
+    </section>
+
+         <!-- ── Outerwear ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Outerwear</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/w.avif" alt="Tesla Gen 3 Wooden Playset" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Women's Core Jacket</p>
+          <p class="price mt-1">$110</p>
+        </div>
+
+        </div>
+    </section>
+
+        <!-- ── hat ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Hats</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+       <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c12.avif" alt="Espresso Set" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Women's Relaxed Wordmark Hat</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c2.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cybercab Trucker Hat</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c3.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Model Y Launch Series Snapback Hat</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c4.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Model 3 Performance Snapback Hat</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c5.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Model S/X Plaid Snapback Hat</p>
+          <p class="price mt-1">$50</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c6.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cybertruck Off-Road Corduroy Hat</p>
+          <p class="price mt-1">$50</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c7.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cyberbeast Trucker Hat</p>
+          <p class="price mt-1">$40</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+             <span class="absolute top-3 left-3 badge-popular text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wider">Out Of Stock</span>
+            <img src="img2/apparel/c8.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cybertruck Icon Snapback Hat</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c9.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Built for Any Planet Trucker Hat</p>
+          <p class="price mt-1">$30</p>
+        </div>
+        
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c10.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Relaxed T Logo Hat</p>
+          <p class="price mt-1">$30</p>
+        </div>
+        
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/c11.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Relaxed Wordmark Hat</p>
+          <p class="price mt-1">$30</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Socks ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Socks</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+            <div class="product-card cursor-pointer group col-span-2 sm:col-span-1">
+            <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+                <img src="img2/special collections/2420409-00-A_1_2000.avif" alt="Full Self-Driving" class="product-img w-full h-full object-cover" />
+            </div>
+            <p class="product-name">Tesla FC Socks</p>
+            <p class="price mt-1">$30</p>
+            </div>
+
+        </div>
+    </section>
+
+    <h1 class="text-[28px] font-semibold tracking-tight text-[#171a20] mb-10">Kids</h1>
+
+    <!-- ── tees ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Tees</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/tk1.avif" alt="Tesla TX Football" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Kids Tesla Optimus Surfer Tee</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <span class="absolute top-3 left-3 bg-[#171a20] text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wider">New</span>
+            <img src="img2/apparel/tk2.avif" alt="Tesla Pickleball Paddle" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Kids CyberMonsterTruck Tee</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/apparel/tk3.avif" alt="Wireless Portable Charger" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Kids Tesla Optimus Superhero Tee</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/tk4.avif" alt="1:64 Scale Magnacraft" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Kids Tesla Core Tee</p>
+          <p class="price mt-1">$30</p>
+        </div>
+        </div>  
+    </section>
+
+     <!-- ── onesies ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Onesies</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/o1.avif" alt="Tesla Glow Lantern" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Optimus Adventure Onesie</p>
+          <p class="price mt-1">$30</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/o2.avif" alt="Tesla Bolt Power Station" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Made on Earth Onesie | Gen 2</p>
+          <p class="price mt-1">$30</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/o3.avif" alt="Cyberpitch" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Zero Emissions Onesie | Gen 2</p>
+          <p class="price mt-1">$30</p>
+        </div>
+        
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/apparel/04.avif" alt="Cyberpitch" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Lil' Bot Onesie</p>
+          <p class="price mt-1">$55</p>
+        </div>
+      </div>
+    </section>
+
+    
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="border-t border-gray-100 py-6 mt-10">
+    <div class="max-w-[1200px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-[12px] text-[#5c5e62]">
+      <span>Tesla © 2026</span>
+      <a href="#" class="hover:text-[#171a20] transition-colors">Privacy &amp; Legal</a>
+      <a href="#" class="hover:text-[#171a20] transition-colors">Locations</a>
+    </div>
+  </footer>
+
+</body>
+</html>

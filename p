@@ -1,1 +1,0 @@
-https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/tesla-shop-marketing-imagery/hero-carousel/2800x1300_ModelY_Roof_Rack_Snow.jpg, https://digitalassets-shop.tesla.com/image/upload/f_auto,q_auto/v1/content/dam/tesla/tesla-shop-marketing-imagery/hero-carousel/2800x1300_ModelY_Roof_Rack_Snow.jpg 2x

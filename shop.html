@@ -15,29 +15,32 @@
   <!-- ── NAVBAR ── -->
   <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-[20px] bg-white/80 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
-      <!-- Logo -->
-      <a href="index.html" class="flex-shrink-0">
-        <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="100" />
+      <!-- Left: Logo + Shop -->
+      <div class="flex items-center gap-3">
+          <a href="index.html" class="flex-shrink-0">
+        <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="70" />
     </a>
-      <!-- Nav Links -->
-      <div class="hidden md:flex items-center gap-8 text-xs font-medium text-[#171a20]">
-        <a href="#" class="hover:text-gray-500 transition-colors">Shop</a>
-        <a href="#" class="hover:text-gray-500 transition-colors">Vehicle Accessories</a>
-        <a href="#" class="hover:text-gray-500 transition-colors">Apparel</a>
-        <a href="#" class="hover:text-gray-500 transition-colors">Lifestyle</a>
-        <a href="#" class="hover:text-gray-500 transition-colors">Charging</a>
-        <a href="#" class="hover:text-gray-500 transition-colors">Upgrades / Installations</a>
+        <span class="text-gray-300 text-sm">|</span>
+        <a href="shop.html" class="text-[13px] text-[#171a20] font-medium">Shop</a>
+      </div>
+      <!-- Center: Nav links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Charging</a>
+        <a href="#" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Vehicle Accessories</a>
+        <a href="apparel.html" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Apparel</a>
+        <a href="lifestyle.html" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Lifestyle</a>
+        <a href="specialcollections.html" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Special Collections</a>
       </div>
       <!-- Icons -->
       <div class="flex items-center gap-4">
         <button class="p-1 hover:opacity-60 transition-opacity">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </button>
         <button class="p-1 hover:opacity-60 transition-opacity">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </button>
         <button class="p-1 hover:opacity-60 transition-opacity relative">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
           <span class="absolute -top-1 -right-1 bg-[#171a20] text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
         </button>
       </div>
@@ -46,7 +49,6 @@
 
   <!-- ── HERO BANNER ── -->
   <section class="relative w-full mt-12" style="height: 600px;">
-    <!-- Replace src with your hero image -->
      <video src="img2/shop/MY_Roof_Rack_Desktop_2x.webm" autoplay
      class="w-full h-full object-cover"></video>
     <div class="bg-[linear-gradient(to_top,rgba(0,0,0,0.35)_0%,transparent_60%)] absolute inset-0 flex flex-col items-center justify-end pb-16">

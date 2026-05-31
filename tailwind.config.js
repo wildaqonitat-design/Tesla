@@ -51,3 +51,32 @@ module.exports = {
             },
           },
         }
+
+
+    let current = 'vehicles';
+
+    function toggleMenu(name, btn) {
+      document.querySelectorAll('.mega-menu').forEach(m => m.classList.remove('open'));
+      document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active', 'text-black', 'font-medium'));
+      const overlay = document.getElementById('overlay');
+
+      if (name && name !== current) {
+        const el = document.getElementById('menu-' + name);
+        if (el) {
+          el.classList.add('open');
+          btn.classList.add('active', 'text-black', 'font-medium');
+          overlay.classList.remove('hidden');
+        }
+        current = name;
+      } else {
+        current = null;
+        overlay.classList.add('hidden');
+      }
+    }
+
+    function closeAll() {
+      document.querySelectorAll('.mega-menu').forEach(m => m.classList.remove('open'));
+      document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active', 'text-black', 'font-medium'));
+      document.getElementById('overlay').classList.add('hidden');
+      current = null;
+    }

@@ -14,34 +14,186 @@
 <body class="bg-white text-tesla-dark font-sans overflow-x-hidden">
 
   <!-- ========== NAVBAR ========== -->
-  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 h-14 bg-white/90 backdrop-blur-sm">
+  <nav class="fixed inset-x-0 top-0 z-50 h-[40px] bg-white/85 backdrop-blur-lg border-b border-white/70">
+    <div class="mx-auto flex h-full max-w-[1280px] items-center justify-between px-6">
 
-    <!-- Logo -->
-    <a href="#" class="flex-shrink-0">
-        <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="100" />
-    </a>
+      <!-- Logo -->
+      <a href="#" class="flex-shrink-0">
+        <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="70" />
+      </a>
 
-    <!-- Center links -->
-    <div class="flex items-center gap-7">
-      <a href="#" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Vehicles</a>
-      <a href="#" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Energy</a>
-      <a href="#" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Charging</a>
-      <a href="#" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Discover</a>
-      <a href="shop.html" class="text-[14px] font-medium tracking-wide hover:text-tesla-light transition-colors">Shop</a>
-    </div>
+      <!-- Center links -->
+      <div class="flex-1 flex justify-center">
+        <div class="flex items-center gap-9 text-[11px] font-medium tracking-[0.02em] text-slate-900">
+          <div class="relative group">
+            <a href="#" class="inline-flex items-center py-2 transition hover:text-slate-700">Vehicles</a>
+            <div class="fixed inset-x-0 top-[40px] h-[calc(100vh-40px)] bg-white shadow-xl p-6 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto z-40 overflow-auto scroll-m-0">
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 list-none p-0 m-0 items-start">
 
-    <!-- Right -->
-      <div class="flex items-center gap-4 text-xl text-black">
-                 <button aria-label="Feather icon">
-                     <i data-feather="help-circle" class="w-5 h-5"></i>
-                 </button>
-                <button aria-label="Feather icon">
-                     <i data-feather="globe" class="w-5 h-5"></i>
-                 </button>
-                 <button aria-label="Feather icon">
-                      <i data-feather="user" class="w-5 h-5"></i>
-                </button>
+              <li>
+                <img src="img2/Mega-Menu-Vehicles-Model-S-New-NA-TW-KR.avif" alt="model dropdown" class="w-18 h-12 object-cover rounded inline-block">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 ">Model S</a>
+                <div class="flex flex-col items-center gap-3 w-full px-4">
+                  <a href="#" class="text-gray-700 flex flex-col mr-40">Learn</a>
+                  <span>
+                    <a href="#" class="text-gray-700 flex flex-col relative bottom-7 mr-10">Order</a>
+                  </span>
                 </div>
+              </li>
+              
+              <li>
+              <img src="img2/Mega-Menu-Vehicles-Model-3-Performance-LHD.avif" alt="model dropdown" class="w-18 h-12 object-cover inline-block">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 ">Model 3</a>
+               <div class="flex flex-col items-center gap-3 w-full px-4">
+                <a href="#" class="text-gray-700 flex flex-col mr-40">Learn</a>
+                <span>
+                  <a href="#" class="text-gray-700 flex flex-col relative bottom-7 mr-10">Order</a>
+                </span>
+              </div>
+              </li>
+
+              <li>
+              <img src="img2/Mega-Menu-Vehicles-Model-X-New.avif" alt="model dropdown" class="w-18 h-12 object-cover inline-block">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700  ">Model X</a>
+               <div class="flex flex-col items-center gap-3 w-full px-4">
+                <a href="#" class="text-gray-700 flex flex-col mr-40">Learn</a>
+                <span>
+                  <a href="#" class="text-gray-700 flex flex-col relative bottom-7 mr-10">Order</a>
+                </span>
+              </div>
+              </li>
+              <li class="self-start">
+               <ul class="list-none p-0 m-0">
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Current Offers</a>
+                </li>
+                
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Demo Drive</a>
+                </li>
+              
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Trade-in</a>
+                </li>
+             
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Vehicle Safety Report</a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Pre-Owned</a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Trip Planner</a>
+                </li>
+             
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Features</a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Help Me Choose</a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Compare</a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Safety</a>
+                </li>
+             
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Fleet</a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Semi</a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Roadster</a>
+                </li>
+              
+                <li>
+                  <a href="#" class="block px-2 py-1 text-sm text-gray-700  ">Current Offers</a>
+                </li>
+                </li>
+              
+              </ul>
+              
+
+            </ul>
+
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-2 p-0 m-0 list-none">
+
+              <li>  
+              <img src="img2/Mega-Menu-Vehicles-Model-Y-2-v3.avif" alt="model dropdown" class="w-18 h-12  object-cover inline-block">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 ">Model Y</a>
+               <div class="flex flex-col items-center gap-3 w-full px-4">
+                <a href="#" class="text-gray-700  flex flex-col mr-40">Learn</a>
+                <span>
+                  <a href="#" class="text-gray-700  flex flex-col relative bottom-7 mr-10">Order</a>
+                </span>
+              </li>
+
+              <li>
+              <img src="img2/Mega-Menu-Vehicles-Cybertruck-1x.avif" alt="model dropdown" class="w-18 h-12 object-cover rounded inline-block">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 ">Cybertruck</a>
+               <div class="flex flex-col items-center gap-3 w-full px-4">
+                <a href="#" class="text-gray-700  flex flex-col mr-40">Learn</a>
+                <span>
+                  <a href="#" class="text-gray-700  flex flex-col relative bottom-7 mr-10">Order</a>
+                </span>
+                </li>
+
+              <li>
+                <img src="img2/Mega-Menu-Vehicles-Inventory.avif" alt="model dropdown" class="w-18 h-12 object-cover rounded inline-block">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700  ">Inventory</a>
+                  <div class="flex flex-col items-center gap-3 w-full px-4">
+                <a href="#" class="text-gray-700  flex flex-col mr-40">Learn</a>
+                <span>
+                  <a href="#" class="text-gray-700  flex flex-col relative bottom-7 mr-10">Order</a>
+                </span>
+              </li>
+
+                </ul>
+
+                <ul>
+              <li>
+              <img src="img2/Mega-Menu-Vehicles-FSD.avif" alt="model dropdown" class="w-13 h-12 object-cover rounded inline-block">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 ">Full Self-Driving <br>(supervised)</a>
+               <div class="flex flex-col  gap-3 w-full px-4">
+                <a href="#" class="text-gray-700  flex flex-col mr-40">Learn</a>
+                <span>
+                  <a href="#" class="text-gray-700  flex flex-col relative bottom-7 ml-20">Experience</a>
+                </span>
+              </li>
+                </ul>
+            </div>
+          </div>
+          <a href="#" class="transition hover:text-slate-700">Energy</a>
+          <a href="#" class="transition hover:text-slate-700">Charging</a>
+          <a href="#" class="transition hover:text-slate-700">Discover</a>
+          <a href="shop.html" class="transition hover:text-slate-700">Shop</a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="flex items-center gap-4 text-xl text-black ">
+        <button aria-label="Feather icon">
+          <i data-feather="help-circle" class="w-4 h-4"></i>
+        </button>
+        <button aria-label="Feather icon">
+          <i data-feather="globe" class="w-4 h-4"></i>
+        </button>
+        <button aria-label="Feather icon">
+          <i data-feather="user" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
   </nav>
 
   <!-- ========== HERO: MODEL Y ========== -->

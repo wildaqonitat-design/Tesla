@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesla — Lifestyle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/output.css" />
+  <script src="tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Gotham:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+    /* Nav */
+    .nav-link { font-size: 13px; letter-spacing: 0.02em; }
+
+    /* Product card hover */
+    .product-card:hover .product-img { transform: scale(1.04); }
+    .product-img { transition: transform 0.4s ease; }
+
+    /* Badge */
+    .badge-popular { background: hsl(0, 2%, 43%); }
+
+    /* Section title */
+    .section-title { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: #171a20; border-bottom: 1px solid #d0d0d0; padding-bottom: 8px; margin-bottom: 20px; }
+
+    /* Price text */
+    .price { font-size: 13px; color: #5c5e62; }
+
+    /* Product name */
+    .product-name { font-size: 13px; color: #171a20; font-weight: 400; margin-top: 10px; line-height: 1.4; }
+
+    /* Wishlist icon */
+    .wishlist-btn { opacity: 0; transition: opacity 0.2s; }
+    .product-card:hover .wishlist-btn { opacity: 1; }
+  </style>
+</head>
+<body class="bg-white text-[#171a20]">
+
+  <!-- ── NAVBAR ── -->
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-[20px] bg-white/80 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
+      <!-- Left: Logo + Shop -->
+      <div class="flex items-center gap-3">
+          <a href="index.html" class="flex-shrink-0">
+        <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="70" />
+    </a>
+        <span class="text-gray-300 text-sm">|</span>
+        <a href="shop.html" class="text-[13px] text-[#171a20] font-medium">Shop</a>
+      </div>
+
+      <!-- Center: Nav links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Charging</a>
+        <a href="#" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Vehicle Accessories</a>
+        <a href="apparel.html" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Apparel</a>
+        <a href="lifestyle.html" class="text-[13px] text-[#171a20] font-semibold hover:text-gray-500 transition-colors">Lifestyle</a>
+        <a href="specialcollections.html" class="text-[13px] text-[#171a20] hover:text-gray-500 transition-colors">Special Collections</a>
+      </div>
+
+      <!-- Right icons -->
+      <div class="flex items-center gap-4">
+        <button class="hover:text-gray-500 transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/></svg>
+        </button>
+        <button class="hover:text-gray-500 transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM12 14c-4.42 0-8 1.79-8 4v1h16v-1c0-2.21-3.58-4-8-4z"/></svg>
+        </button>
+        <button class="hover:text-gray-500 transition-colors relative">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.3 5.4a1 1 0 0 0 1 1.2h11.6M7 13H5.4M10 21a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm7 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ MAIN CONTENT ═══════════════════════ -->
+  <main class="max-w-[1200px] mx-auto px-6 py-10">
+
+    <!-- Page Title -->
+    <h1 class="text-[28px] font-light tracking-tight text-[#171a20] mb-10">Lifestyle</h1>
+
+    <!-- ── BEST SELLERS ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Best Sellers</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <!-- Card 1 -->
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/2420410-00-A_1_2000.webp" alt="Tesla Tx Football" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla FC Football</p>
+          <p class="price mt-1">$55</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/2218229-00-A_1_2000.avif" alt="Espresso Set" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">CyberDemitasse Espresso Set</p>
+          <p class="price mt-1">$125</p>
+        </div>
+
+        <!-- Card 3 — full-width banner style -->
+        <div class="product-card cursor-pointer group col-span-2 sm:col-span-1">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/FSD_14.avif" alt="Full Self-Driving" class="product-img w-full h-full object-cover" />
+          </div>
+          <p class="product-name">One Month Full Self-Driving (Supervised) Gift Card</p>
+          <p class="price mt-1">$112</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── BAGS ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Bags</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <span class="absolute top-3 left-3 badge-popular text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wider">PreOrder</span>
+            <img src="img2/lifestyle/2165391-00-A_2000_01.avif" alt="Tesla Mini Backpack" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Tesla Core Backpack</p>
+          <p class="price mt-1">$168</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/2217818-00-A_2000_001.avif" alt="Tesla Pouch Kit" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Travel Kit</p>
+          <p class="price mt-1">$75</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── DRINKWARE ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Drinkware</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2218229-00-A_1_2000.avif" alt="Espresso Set" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">CyberDemitasse Espresso Set</p>
+          <p class="price mt-1">$125</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2278290-00-A_1_2000.avif" alt="Tesla Thermal Mug" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Thermal Mug</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2256899-00-A_2000_01.avif" alt="On-the-Road Travel Flask" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">On the Road Vessel P2M</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2002204-00-A_00_2000.avif" alt="CyberVessel" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">CyberVessel</p>
+          <p class="price mt-1">$50</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/1860629-00-B-01.avif" alt="On-the-Road Tumbler" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">On the Road Vessel</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/2076488-00-A-1-01.avif" alt="On the Road Tumbler Alt" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">On the Road Tumbler</p>
+          <p class="price mt-1">$32</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/2076490-00-A-1-01.avif" alt="On the Road Flat Cap" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">On the Road Cup</p>
+          <p class="price mt-1">$30</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── MINI TESLAS ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Mini Teslas</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2229275-00-A_2000_03.avif" alt="Cybertruck Wind-Up Racer" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Cybertruck Wind-up Racer</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2187657-00-A-1-01.avif" alt="Tesla Gen 3 Wooden Playset" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Diecast 1:18 Scale Model 3</p>
+          <p class="price mt-1">$175</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2228724-00-A_2000_01.avif" alt="Cybertruck Wind-up Racer" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Semi + Cybertruck Wooden Playset</p>
+          <p class="price mt-1">$60</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2080683-00-A-1-01.avif" alt="Lightning Cybertruck Model" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Cybertruck Wind-up Racer</p>
+          <p class="price mt-1">$35</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2100811-00-A-1-01.avif" alt="Tesla Optimus Figure" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Levitating Cybertruck</p>
+          <p class="price mt-1">$190</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2080682-00-A-1-01.avif" alt="Tesla Accessories Collaboration" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Bot Action Figure</p>
+          <p class="price mt-1">$45</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2138418-00-A-1-01.avif" alt="Cybertruck for Kids" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla 20th Anniversary Commemorative Speedform Set</p>
+          <p class="price mt-1">$250</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/1914381-00-A_1-1_2000.avif" alt="Cybertruck for Kids Cover" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Cybertruck for Kids</p>
+          <p class="price mt-1">$1,500</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2041112-00-A-2-01.avif" alt="Cybertruck for Kids" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Cybertruck for Kids Cover</p>
+          <p class="price mt-1">$95</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/1714748-00-B-01.avif" alt="Cybertruck 1:18 Scale Model" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cyberquad for Kids</p>
+          <p class="price mt-1">$1,650</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/1930736-00-A_1_2000.avif" alt="Model 3 Scale Model" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Cyberquad for Kids Cover</p>
+          <p class="price mt-1">$95</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/2047654-01-A-1-01.avif" alt="Cybertruck Scale Model" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Diecast 1:18 Scale Model S</p>
+          <p class="price mt-1">$195</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2047655-00-A-2-01.avif" alt="Model Y Scale Model" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Diecast 1:18 Scale Model X</p>
+          <p class="price mt-1">$195</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/1914383-00-A-01.avif" alt="Model S Scale Model" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Diecast 1:18 Scale Model Y</p>
+          <p class="price mt-1">$175</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/1914381-00-A_1-1_2000.avif" alt="Model X Scale" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">1:18 Scale Cybertruck Diecast</p>
+          <p class="price mt-1">$225</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/1524001-00-A_0_2000.avif" alt="Tesla Semi Scale" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Diecast 1:18 Scale Roadster</p>
+          <p class="price mt-1">$175</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/1474970-00-A_0_2000.avif" alt="Model Y Roadster" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Diecast 1:24 Scale Semi</p>
+          <p class="price mt-1">$175</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── OUTDOOR & TECH ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Outdoor &amp; Tech</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2420410-00-A_1_2000.webp" alt="Tesla TX Football" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla FC Football</p>
+          <p class="price mt-1">$55</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <span class="absolute top-3 left-3 bg-[#171a20] text-white text-[10px] font-semibold px-2 py-0.5 uppercase tracking-wider">New</span>
+            <img src="img2/lifestyle/2272753-00-A_2000_01.avif" alt="Tesla Pickleball Paddle" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Plaid Pickleball Paddle by Selkirk</p>
+          <p class="price mt-1">$350</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center relative">
+            <img src="img2/lifestyle/2232997-00-A_2000_01.avif" alt="Wireless Portable Charger" class="product-img w-3/4 h-3/4 object-contain" />
+            <button class="wishlist-btn absolute top-3 right-3 p-1.5 bg-white rounded-full shadow-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 0 1 6.364 0L12 7.636l1.318-1.318a4.5 4.5 0 0 1 6.364 6.364L12 20.364l-7.682-7.682a4.5 4.5 0 0 1 0-6.364z"/></svg>
+            </button>
+          </div>
+          <p class="product-name">Wireless Portable Charger</p>
+          <p class="price mt-1">$80 – $95</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2157411-00-A_01_2000.avif" alt="1:64 Scale Magnacraft" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">1:40 Scale Megapack Charger</p>
+          <p class="price mt-1">$120</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2092024-00-A-1-01.avif" alt="Tesla Glow Lantern" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Glow Lantern</p>
+          <p class="price mt-1">$95</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/2087044-00-A-1-01.avif" alt="Tesla Bolt Power Station" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">Tesla Salt + Pepper Shakers</p>
+          <p class="price mt-1">$65</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/1997689-00-A-2-01.avif" alt="Cyberpitch" class="product-img w-3/4 h-3/4 object-contain" />
+          </div>
+          <p class="product-name">CaraokeMic</p>
+          <p class="price mt-1">$215</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── GIFT CARD ── -->
+    <section class="mb-14">
+      <h2 class="section-title uppercase">Gift Card</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/FSD_14.avif" alt="Full Self-Driving Gift Card" class="product-img w-full h-full object-cover" />
+          </div>
+          <p class="product-name">One Month Full Self-Driving (Supervised) Gift Card</p>
+          <p class="price mt-1">$112</p>
+        </div>
+
+        <div class="product-card cursor-pointer group">
+          <div class="overflow-hidden bg-[#f4f4f4] rounded-sm aspect-square flex items-center justify-center">
+            <img src="img2/lifestyle/Giftcard_Optimus_2000.webp" alt="Tesla Digital Gift Card" class="product-img w-full h-full object-cover" />
+          </div>
+          <p class="product-name">Tesla Gift Card</p>
+          <p class="price mt-1">$10 – $500</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="border-t border-gray-200 mt-16 py-10 bg-white">
+    <div class="max-w-[1200px] mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-[13px] text-[#5c5e62]">
+        <div>
+          <p class="font-semibold text-[#171a20] mb-3">Tesla</p>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Careers</a></li>
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Investor Relations</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-[#171a20] mb-3">Products &amp; Services</p>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Electric Vehicles</a></li>
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Powerwall</a></li>
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Solar Panels</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-[#171a20] mb-3">Support</p>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Find Us</a></li>
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Contact</a></li>
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-[#171a20] mb-3">Legal</p>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Privacy &amp; Legal</a></li>
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">Contact</a></li>
+            <li><a href="#" class="hover:text-[#171a20] transition-colors">News</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-[12px] text-[#5c5e62] mt-8">Tesla © 2026 All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
