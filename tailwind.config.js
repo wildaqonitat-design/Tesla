@@ -27,3 +27,22 @@ function dismissCookie() {
         }, 300);
     }
 }
+
+document.addEventListener('DOMContentLoaded', function(){ feather.replace(); });
+
+document.addEventListener('DOMContentLoaded', function () {
+      var menuButton = document.getElementById('mobile-menu-button');
+      var mobileMenu = document.getElementById('mobile-menu');
+      var mobileMenuClose = document.getElementById('mobile-menu-close');
+
+      if (!menuButton || !mobileMenu) return;
+
+      var toggleMenu = function () {
+        var isHidden = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden', !isHidden);
+        menuButton.setAttribute('aria-expanded', String(isHidden));
+      };
+
+      menuButton.addEventListener('click', toggleMenu);
+      mobileMenuClose && mobileMenuClose.addEventListener('click', toggleMenu);
+    });

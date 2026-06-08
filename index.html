@@ -39,13 +39,8 @@ We use cookies and process data from your device to analyze website performance,
         <img src="img/tesla-logo-png-20.png" alt="Tesla Logo" width="70" />
       </a>
 
-      <!-- Mobile burger -->
-      <button id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation" class="md:hidden inline-flex items-center justify-center rounded p-2 text-slate-900 hover:bg-slate-100 transition">
-        <i data-feather="menu" class="w-5 h-5"></i>
-      </button>
-
       <!-- Center links -->
-      <div class="hidden md:flex flex-1 justify-center">
+      <div class="flex-1 flex justify-center">
         <div class="flex items-center gap-9 text-[11px] font-medium tracking-[0.02em] text-slate-900">
           <div class="relative group">
             <a href="#" class="inline-flex items-center py-2 transition hover:text-slate-700">Vehicles</a>
@@ -204,7 +199,7 @@ We use cookies and process data from your device to analyze website performance,
       </div>
 
       <!-- Right -->
-      <div class="hidden md:flex items-center gap-4 text-xl text-black ">
+      <div class="flex items-center gap-4 text-xl text-black ">
         <button aria-label="Feather icon">
           <i data-feather="help-circle" class="w-4 h-4"></i>
         </button>
@@ -216,46 +211,7 @@ We use cookies and process data from your device to analyze website performance,
         </button>
       </div>
     </div>
-
-    <div id="mobile-menu" class="absolute inset-x-0 top-full z-40 hidden bg-white border-b border-gray-200 shadow-lg md:hidden">
-      <div class="px-4 py-4 space-y-2 text-sm text-slate-900">
-        <div class="flex items-center justify-between">
-          <span class="font-semibold">Navigation</span>
-          <button id="mobile-menu-close" aria-label="Close navigation" class="text-slate-900 p-2 rounded hover:bg-slate-100 transition">
-            <i data-feather="x" class="w-5 h-5"></i>
-          </button>
-        </div>
-        <a href="#" class="block py-3 border-b border-slate-200">Vehicles</a>
-        <a href="#" class="block py-3 border-b border-slate-200">Energy</a>
-        <a href="#" class="block py-3 border-b border-slate-200">Charging</a>
-        <a href="#" class="block py-3 border-b border-slate-200">Discover</a>
-        <a href="shop.html" class="block py-3 border-b border-slate-200">Shop</a>
-        <div class="flex gap-2 pt-2">
-          <button aria-label="Help" class="flex-1 rounded border border-slate-200 py-2 text-slate-900 hover:bg-slate-100 transition">Help</button>
-          <button aria-label="Account" class="flex-1 rounded border border-slate-200 py-2 text-slate-900 hover:bg-slate-100 transition">Account</button>
-        </div>
-      </div>
-    </div>
   </nav>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var menuButton = document.getElementById('mobile-menu-button');
-      var mobileMenu = document.getElementById('mobile-menu');
-      var mobileMenuClose = document.getElementById('mobile-menu-close');
-
-      if (!menuButton || !mobileMenu) return;
-
-      var toggleMenu = function () {
-        var isHidden = mobileMenu.classList.contains('hidden');
-        mobileMenu.classList.toggle('hidden', !isHidden);
-        menuButton.setAttribute('aria-expanded', String(isHidden));
-      };
-
-      menuButton.addEventListener('click', toggleMenu);
-      mobileMenuClose && mobileMenuClose.addEventListener('click', toggleMenu);
-    });
-  </script>
 
   <!-- ========== HERO: MODEL Y ========== -->
   <section
